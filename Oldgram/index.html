@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>oldagram</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <div>
+            <header>
+                <img class="logo" src="oldagram.jfif">
+                <img class="user-avatar" src="main-pro.jpg">
+            </header>
+        </div>
+
+        <div class="post">
+            <div class="header">
+                <img class="avatar" src="main-pro.jpg">
+                <div>
+                    <div><span class="name">Farhat_Hamraz</span></div>
+                    <span class="location">Kabul, Afghanistan</span>
+                </div>
+            </div>
+
+            <div>
+                <p class="idea"> نیست نشان زندگی <br> ...تا نرسد نشان تو
+                    <footer>(مولانا)</footer></p>
+                <video controls class="video" src="Yunus_Emre___Ney_Sesi(480p).mp4" type="video/mp4"></video>
+            </div>
+            <div class="icons">
+                <ul>
+                    <li> <img src="heart.jfif" alt="heart" width="35px" onclick="postOne()"></li>
+                    <li> <img src="icob-b.jfif" alt="comment" width="30px"></li>
+                    <li><img src="tele.png" alt="share" width="30px"></li>
+                </ul>
+                <h3 id="heart1">1,000,000 likes</h3>
+                <p class="like"> <span>Maryam~Mohammadi:</span> Very nice ❤️ ❤️ ❤️</p>
+            </div>
+        </div>
+        </div>
+        <div class="line"></div>
+        <div class="post">
+            <div class="header">
+                <img class="avatar" src="my-little-cat.jpg">
+                <div>
+                    <div><span class="name">Husna_Mohammadi</span></div>
+                    <span class="location">Hearat, Afghanistan</span>
+                </div>
+            </div>
+
+            <div>
+                <p class="idea">إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّى يُغَيِّرُوا مَا بِأَنْفُسِهِمْ
+                    <footer>(الرعد: 11)</footer> </p>
+                <img class="posts" src="post-1.jpg" alt="post1">
+            </div>
+            <div class="icons">
+                <ul>
+                    <li> <img src="heart.jfif" alt="heart" width="35px" onclick="post2()"></li>
+                    <li> <img src="icob-b.jfif" alt="comment" width="30px"></li>
+                    <li><img src="tele.png" alt="share" width="30px"></li>
+                </ul>
+                <h3 id="heart2">10,000 likes</h3>
+                <p class="like"> <span>‍Effat_hamraz: </span> ❤️ ❤️ ❤️حَسْبِيَ اللَّهُ لا إِلَـهَ إِلاَّ هُوَ عَلَيْهِ
+                    تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ</p>
+            </div>
+        </div>
+        </div>
+        <div class="line"></div>
+        <div class="post">
+            <div class="header">
+                <img class="avatar" src="pro3.jfif">
+                <div>
+                    <div><span class="name">Asma_Ekhlas</span></div>
+                    <span class="location">Balkh, Afghanistan</span>
+                </div>
+            </div>
+            <div>
+                <p class="idea"> 🧠 💻یک بار برای همیشه انواع حافظه های کمپیوتر را یاد بگیریم </p>
+                <img  class="posts" src="memory.jpg" alt="" >
+            </div>
+            <div class="icons">
+                <ul>
+                    <li> <img src="heart.jfif" alt="heart" width="35px" onclick="post3()"></li>
+                    <li> <img src="icob-b.jfif" alt="comment" width="30px"></li>
+                    <li><img src="tele.png" alt="share" width="30px"></li>
+                </ul>
+                <h3 id="heart3">1,000 likes</h3>
+                <p class="like"> <span>Mohammad:
+                    </span>Thanks for sharing it was really useful👌</p>
+            </div>
+         </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="post">
+        <div class="header">
+            <img class="avatar" src="main-pro.jpg" >
+            <div>
+                <div><span class="name">Farhat_Hamraz</span></div>
+                <span class="location">Kabul, Afghanistan</span>
+            </div>
+        </div>
+
+        <div>
+            <p class="idea"> Allha Knows...❤️
+            </p>
+            <video controls class="video" src="Allah-knows.mp4" type="video/mp4" ></video>
+        </div>
+        <div class="icons">
+            <ul>
+                <li> <img src="heart.jfif" alt="heart" width="35px" onclick="post4()"></li>
+                <li> <img src="icob-b.jfif" alt="comment" width="30px"></li>
+                <li><img src="tele.png" alt="share" width="30px"></li>
+            </ul>
+            <h3 id="heart4">1,476 likes</h3>
+            <p class="like"> <span>Sahar-ahmadi: </span> Exactly ❤️ ❤️ ❤️</p>
+        </div>
+    </div>
+    </div>
+</section>
+    <script>
+        let heartFirst = document.getElementById("heart1")
+        let heart1 = 1000000
+
+        function postOne() {
+            heart1 += 1
+            heartFirst.textContent = heart1 + " " + "likes"
+        }
+
+        let heartSecound = document.getElementById("heart2")
+        let heart2 = 10000
+
+        function post2() {
+            heart2 += 1
+            heartSecound.textContent = heart2 + " " + "likes"
+        }
+
+        let heartThird = document.getElementById("heart3")
+        let heart3 = 1000
+
+        function post3() {
+            heart3 += 1
+            heartThird.textContent = heart3 + " " + "likes"
+        }
+        let heartFourth = document.getElementById("heart4")
+        let heart4 = 1476
+
+        function post4() {
+            heart4 +=1
+            heartFourth.textContent =  heart4 +"likes"
+        }
+    </script>
+</body>
+
+</html>
